@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "836072049455",
+    "firebase_url": "https://movies-tv-predict-app-default-rtdb.firebaseio.com",
+    "project_id": "movies-tv-predict-app",
+    "storage_bucket": "movies-tv-predict-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836072049455:android:94f5af3f6cf3e140512fda",
+        "android_client_info": {
+          "package_name": "com.example.machinelearningbasedapplicationforforecastingmoviestvseriessuccess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836072049455-jlp6fiebla5biga0frsf9ot7e46g4h46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1f2fi6dBtN_uCg13w89WEiL66_WINJ9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836072049455-jlp6fiebla5biga0frsf9ot7e46g4h46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

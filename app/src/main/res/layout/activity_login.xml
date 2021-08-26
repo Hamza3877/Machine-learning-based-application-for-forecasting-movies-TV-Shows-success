@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".Login">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_gradient"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/back_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.5"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#D5FFFFFF"
+app:layout_constraintVertical_bias="0.50"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent="0.75"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_percent="0.95"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="#FF9233"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tv_password_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_login"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintWidth_percent="0.8">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+
+                android:inputType="textEmailAddress"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_password_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email_layout"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_goneMarginTop="10dp"
+
+            app:passwordToggleEnabled="true"
+
+            app:passwordToggleTint="@color/colorPrimary"
+            tools:ignore="MissingConstraints"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_password_edit"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget your password ?"
+            android:textColor="#2962FF"
+            android:textSize="14sp"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password_layout"
+            app:layout_constraintVertical_bias="0.1" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:elevation="2dp"
+            android:background="@drawable/btn_shadow_effect"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Login"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forget"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="#2962FF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_signup"
+            app:layout_constraintVertical_bias="0.20" />
+
+
+        <TextView
+            android:id="@+id/tv_nonreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as Non Register User"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="#2962FF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_background"
+            android:padding="15dp"
+            android:src="@drawable/profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintVertical_bias="0.5"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenunonregisteruser"
+        app:headerLayout="@layout/navheadernonregisteruser"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

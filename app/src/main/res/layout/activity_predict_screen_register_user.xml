@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+
+    tools:context=".PredictScreenRegisterUser">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_gradient"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict Movie/TV show"
+
+            android:gravity="center"
+             android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            ></TextView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/back_style_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.80"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="1"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintVertical_bias="0">
+
+
+
+
+
+
+
+        <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+
+
+        >
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Name"></TextView>
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="Enter name of movie or tv show  here"
+                    ></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Release Year"></TextView>
+
+                <EditText
+                    android:id="@+id/releaseyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:inputType="number"
+                    android:hint="Enter ReleasingYear in format (2021) etc"
+                    ></EditText>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Budget ($)"></TextView>
+
+                <EditText
+                    android:id="@+id/budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:inputType="number"
+                    android:hint="Enter budget in dollars here"
+                    ></EditText>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Production Company"></TextView>
+
+                <Spinner
+                    android:id="@+id/productioncompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#070707"></Spinner>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Country"></TextView>
+
+
+                <Spinner
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#070707"></Spinner>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Director"></TextView>
+
+                <Spinner
+                    android:id="@+id/director"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#070707"></Spinner>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Genre"></TextView>
+
+
+                <Spinner
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#070707"></Spinner>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Star"></TextView>
+
+                <Spinner
+                    android:id="@+id/star"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#070707"></Spinner>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Writer"></TextView>
+
+                <Spinner
+                    android:id="@+id/writer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#070707"></Spinner>
+
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/predict"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Predict"
+                    android:textSize="8dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/btn_shadow_effect"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    ></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenuregisteruser"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Machine learning based application for forecasting MoviesTV series success"
